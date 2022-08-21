@@ -9,6 +9,7 @@ header {
     // explore
     .explore-position {
       position: relative;
+
       top: 6rem;
       margin-left: 8rem;
 
@@ -51,5 +52,15 @@ header {
         cursor: pointer;
       }
     }
+  }
+}
+
+@keyframes deleteText {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
