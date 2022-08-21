@@ -2,14 +2,15 @@ header {
   height: 100vh;
 
   .header-text {
-    background-color: #611818;
+    background-color: $themeClrPrimary;
     height: 100%;
     flex-shrink: 0;
 
     .explore-position {
       position: relative;
-      top: 7rem;
+      top: 6rem;
       margin-left: 8rem;
+
 
       h1 {
         color: white;

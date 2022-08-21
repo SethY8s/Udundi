@@ -8,7 +8,7 @@ header .header-text {
 }
 header .header-text .explore-position {
   position: relative;
-  top: 7rem;
+  top: 6rem;
   margin-left: 8rem;
 }
 header .header-text .explore-position h1 {
@@ -45,6 +45,43 @@ header .header-image .link {
 }
 header .header-image .link:hover {
   cursor: pointer;
+}
+
+.modal-container {
+  position: relative;
+  width: 580px;
+  padding: 5rem;
+  background-color: white;
+  margin-left: 8rem;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
+}
+.modal-container img {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 535px;
+  top: 25px;
+}
+.modal-container h2 {
+  font-size: 66px;
+  font-family: "Cormorant+Garamond";
+  width: fit-content;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, #611818, white) 1;
+  padding-bottom: 0.5rem;
+}
+.modal-container p {
+  font-size: 18px;
+  padding-top: 0.5rem;
+}
+.modal-container button {
+  width: 235px;
+  height: 55px;
+  background: linear-gradient(to left, #a36754, #611818);
+  font-size: 18px;
+  color: white;
+  border: 1px solid #979797;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+.modal-container {
+  position: relative;
+  // height: 700px;
+  width: 580px;
+  padding: 5rem;
+  background-color: white;
+  margin-left: 8rem;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
+
+  img {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 535px;
+    top: 25px;
+  }
+
+  h2 {
+    font-size: 66px;
+    font-family: 'Cormorant+Garamond';
+    width: fit-content;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, $themeClrPrimary, white) 1;
+    padding-bottom: .5rem;
+  }
+  p {
+    font-size: 18px;
+    padding-top: .5rem;
+  }
+  button {
+    width: 235px;
+    height: 55px;
+    background: linear-gradient(to left, #a36754, $themeClrPrimary);
+    font-size: 18px;
+    color: white;
+    border: 1px solid #979797;
+  }
+}
