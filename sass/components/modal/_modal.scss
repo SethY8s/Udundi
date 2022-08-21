@@ -5,7 +5,8 @@
   // position: relative;
   position: absolute;
 
-  height: 0px;
+  width: 580px;
+
   padding: 4rem;
   background-color: rgb(255, 255, 255, 1);
   margin-left: 10rem;
@@ -13,7 +14,7 @@
 
   transform-origin: left bottom;
   animation: createBox 0.3s ease-in;
-  animation-fill-mode: forwards;
+  // animation-fill-mode: forwards;
 
   img {
     position: absolute;
@@ -48,15 +49,22 @@
 }
 
 .delete-explore {
-  animation: deleteText .3s linear;
+  animation: deleteText 0.3s linear;
   animation-fill-mode: forwards;
 }
 
 .adding-modal {
   display: block;
-  visibility: visible;
-  width: 580px;
-  height: fit-content;
+  animation-fill-mode: forwards;
+}
+
+.returning-explore {
+  animation: addedText 0.3s ease-in;
+  // animation-fill-mode: forwards;
+}
+.removing-modal {
+  animation: deleteBox 0.3s ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes createBox {
@@ -78,5 +86,26 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes addedText {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes deleteBox {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
   }
 }

@@ -46,26 +46,17 @@ header .header-image .link:hover {
   cursor: pointer;
 }
 
-@keyframes deleteText {
-  0% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .modal-container {
   display: none;
   opacity: 0;
   position: absolute;
-  height: 0px;
+  width: 580px;
   padding: 4rem;
   background-color: rgb(255, 255, 255);
   margin-left: 10rem;
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
   transform-origin: left bottom;
   animation: createBox 0.3s ease-in;
-  animation-fill-mode: forwards;
 }
 .modal-container img {
   position: absolute;
@@ -104,9 +95,16 @@ header .header-image .link:hover {
 
 .adding-modal {
   display: block;
-  visibility: visible;
-  width: 580px;
-  height: fit-content;
+  animation-fill-mode: forwards;
+}
+
+.returning-explore {
+  animation: addedText 0.3s ease-in;
+}
+
+.removing-modal {
+  animation: deleteBox 0.3s ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes createBox {
@@ -128,6 +126,24 @@ header .header-image .link:hover {
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes addedText {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes deleteBox {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
   }
 }
 
