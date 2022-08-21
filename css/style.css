@@ -65,7 +65,12 @@ header .header-image .link:hover {
   left: 535px;
   top: 22px;
 }
-.modal-container h2 {
+.modal-container .modal-text-container {
+  opacity: 0;
+  animation: textAnimation 0.7s ease-in;
+  animation-fill-mode: forwards;
+}
+.modal-container .modal-text-container h2 {
   font-size: 66px;
   font-family: "Cormorant+Garamond";
   width: fit-content;
@@ -74,11 +79,11 @@ header .header-image .link:hover {
   border-image: linear-gradient(to right, #611818, white) 1;
   padding-bottom: 0.5rem;
 }
-.modal-container p {
+.modal-container .modal-text-container p {
   font-size: 18px;
   padding-top: 0.5rem;
 }
-.modal-container button {
+.modal-container .modal-text-container button {
   margin-top: 1rem;
   width: 235px;
   height: 55px;
@@ -107,6 +112,16 @@ header .header-image .link:hover {
   animation-fill-mode: forwards;
 }
 
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 @keyframes createBox {
   0% {
     opacity: 0;

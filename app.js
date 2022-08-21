@@ -20,5 +20,5 @@ modalButton.addEventListener('click', function () {
     modal.classList.remove('adding-modal');
     explore.classList.remove('returning-explore');
     modal.classList.remove('removing-modal');
-  }, 1000);
+  }, 500);
 });
