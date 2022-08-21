@@ -6,11 +6,11 @@ header {
     height: 100%;
     flex-shrink: 0;
 
+    // explore
     .explore-position {
       position: relative;
       top: 6rem;
       margin-left: 8rem;
-
 
       h1 {
         color: white;
@@ -18,24 +18,25 @@ header {
         font-size: 16vw;
         // font-size: 128px;
       }
-      .button{
+      .button {
         position: relative;
         bottom: 2rem;
         display: flex;
         align-items: center;
-        width: 100%;
-        img{
-            width: 43px;
-            height: 43px;
+        // width: 100%;
+        img {
+          width: 43px;
+          height: 43px;
         }
-        p{
-            font-size: 24px;
-            color: white;
-            margin-bottom: .2rem;
-            margin-left: 1rem;
+        p {
+          font-size: 24px;
+          color: white;
+          margin-bottom: 0.2rem;
+          margin-left: 1rem;
         }
       }
     }
+    // exploreexplore-position
   }
 
   .header-image {

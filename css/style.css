@@ -21,7 +21,6 @@ header .header-text .explore-position .button {
   bottom: 2rem;
   display: flex;
   align-items: center;
-  width: 100%;
 }
 header .header-text .explore-position .button img {
   width: 43px;
@@ -48,9 +47,10 @@ header .header-image .link:hover {
 }
 
 .modal-container {
+  display: none;
   position: relative;
   width: 580px;
-  padding: 5rem;
+  padding: 4rem;
   background-color: white;
   margin-left: 8rem;
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
@@ -60,7 +60,7 @@ header .header-image .link:hover {
   width: 22px;
   height: 22px;
   left: 535px;
-  top: 25px;
+  top: 22px;
 }
 .modal-container h2 {
   font-size: 66px;
@@ -76,12 +76,21 @@ header .header-image .link:hover {
   padding-top: 0.5rem;
 }
 .modal-container button {
+  margin-top: 1rem;
   width: 235px;
   height: 55px;
   background: linear-gradient(to left, #a36754, #611818);
   font-size: 18px;
   color: white;
   border: 1px solid #979797;
+}
+
+.delete-explore {
+  display: none;
+}
+
+.adding-modal {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
