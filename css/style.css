@@ -1,7 +1,3 @@
-html {
-  overflow-x: hidden;
-}
-
 p {
   font-family: "Lato";
 }
@@ -67,7 +63,7 @@ header .header-text .explore-position h1 {
 }
 @media only screen and (max-width: 992px) {
   header .header-text .explore-position h1 {
-    font-size: 140px;
+    font-size: 60px;
   }
 }
 header .header-text .explore-position .button {

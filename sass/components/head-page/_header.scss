@@ -51,7 +51,8 @@ header {
         font-family: 'Cormorant+Garamond';
         font-size: 240px;
         @include respond(ipad) {
-          font-size: 140px;
+          // font-size: 140px;
+          font-size: 60px;
         }
       }
       .button {
@@ -76,8 +77,6 @@ header {
   }
 
   .header-image {
-    
-
     background-image: url('../assets/png/image.png');
     background-size: cover;
     background-repeat: no-repeat;
