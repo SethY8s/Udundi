@@ -31,6 +31,7 @@ header {
       position: relative;
       left: 17rem;
       top: 6rem;
+      // bottom: 500px;
 
       @include respond(laptop) {
         left: 12rem;
@@ -41,7 +42,8 @@ header {
 
       @include respond(ipad) {
         left: 0;
-        top: 0;
+        top: -50px;
+
         // display: flex;
         // justify-content: center;
       }
@@ -51,8 +53,10 @@ header {
         font-family: 'Cormorant+Garamond';
         font-size: 240px;
         @include respond(ipad) {
-          // font-size: 140px;
-          font-size: 60px;
+          font-size: 150px;
+        }
+        @include respond(mobile) {
+          font-size: 80px;
         }
       }
       .button {
@@ -60,6 +64,12 @@ header {
         bottom: 2.5rem;
         display: flex;
         align-items: center;
+
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.02);
+        }
 
         // width: 100%;
         img {
@@ -74,6 +84,12 @@ header {
         }
       }
     }
+
+    .starting-animation {
+      opacity: 0;
+      animation: 1.6s headerAnimation .5s ease-out;
+      animation-fill-mode: forwards;
+    }
   }
 
   .header-image {
@@ -81,11 +97,14 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+
     .link {
       width: 68px;
       height: 68px;
+      transition: all 0.2s ease-in-out;
       &:hover {
         cursor: pointer;
+        transform: scale(1.05);
       }
     }
 
@@ -93,5 +112,19 @@ header {
       display: none;
       background-image: none;
     }
+  }
+}
+
+@keyframes headerAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-150px, 0);
+  }
+  70% {
+    transform: translate(20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: (0, 0);
   }
 }

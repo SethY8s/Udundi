@@ -53,7 +53,7 @@ header .header-text .explore-position {
 @media only screen and (max-width: 992px) {
   header .header-text .explore-position {
     left: 0;
-    top: 0;
+    top: -50px;
   }
 }
 header .header-text .explore-position h1 {
@@ -63,7 +63,12 @@ header .header-text .explore-position h1 {
 }
 @media only screen and (max-width: 992px) {
   header .header-text .explore-position h1 {
-    font-size: 60px;
+    font-size: 150px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header .header-text .explore-position h1 {
+    font-size: 80px;
   }
 }
 header .header-text .explore-position .button {
@@ -71,6 +76,11 @@ header .header-text .explore-position .button {
   bottom: 2.5rem;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+header .header-text .explore-position .button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 header .header-text .explore-position .button img {
   width: 43px;
@@ -82,6 +92,11 @@ header .header-text .explore-position .button p {
   margin-bottom: 0.2rem;
   margin-left: 1rem;
 }
+header .header-text .starting-animation {
+  opacity: 0;
+  animation: 1.6s headerAnimation 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
 header .header-image {
   background-image: url("../assets/png/image.png");
   background-size: cover;
@@ -91,9 +106,11 @@ header .header-image {
 header .header-image .link {
   width: 68px;
   height: 68px;
+  transition: all 0.2s ease-in-out;
 }
 header .header-image .link:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 992px) {
   header .header-image {
@@ -102,6 +119,19 @@ header .header-image .link:hover {
   }
 }
 
+@keyframes headerAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-150px, 0);
+  }
+  70% {
+    transform: translate(20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: 0, 0;
+  }
+}
 .modal-container {
   display: none;
   opacity: 0;
@@ -244,6 +274,20 @@ header .header-image .link:hover {
   to {
     opacity: 0;
     -webkit-transform: scale(0);
+  }
+}
+footer {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  footer {
+    display: block;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #611818;
   }
 }
 
