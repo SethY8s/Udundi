@@ -1,5 +1,14 @@
 @import './variables-mixins/mixins';
 @import './variables-mixins/variables';
 
+p{
+    font-family: 'Lato';
+}
+
+button{
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
 @import './components/head-page/_header.scss';
 @import './components/modal/_modal.scss'

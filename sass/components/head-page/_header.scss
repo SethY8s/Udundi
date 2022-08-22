@@ -6,24 +6,55 @@ header {
     height: 100%;
     flex-shrink: 0;
 
+    // width: 24.75rem;
+    width: 30rem;
+
+    @include respond(laptop) {
+      width: 24.75rem;
+    }
+    @include respond(sm-laptop) {
+      width: 22rem;
+    }
+    // was 25% in html actualy around 29%
+    @include respond(ipad) {
+      width: 100%;
+      background-image: url('../assets/png/image.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+    }
+
     // explore
     .explore-position {
       position: relative;
-
+      left: 17rem;
       top: 6rem;
-      margin-left: 8rem;
+
+      @include respond(laptop) {
+        left: 12rem;
+      }
+      @include respond(sm-laptop) {
+        left: 9rem;
+      }
+
+      @include respond(ipad) {
+        left: 0;
+        top: 0;
+        // display: flex;
+        // justify-content: center;
+      }
 
       h1 {
         color: white;
         font-family: 'Cormorant+Garamond';
-        font-size: 16vw;
-        // font-size: 128px;
+        font-size: 240px;
       }
       .button {
         position: relative;
-        bottom: 2rem;
+        bottom: 2.5rem;
         display: flex;
         align-items: center;
+
         // width: 100%;
         img {
           width: 43px;
@@ -37,10 +68,13 @@ header {
         }
       }
     }
-    // exploreexplore-position
   }
 
   .header-image {
+    @include respond(ipad) {
+      display: none;
+    }
+
     background-image: url('../assets/png/image.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,5 +88,3 @@ header {
     }
   }
 }
-
-
