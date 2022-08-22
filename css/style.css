@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 p {
   font-family: "Lato";
 }
@@ -26,13 +30,12 @@ header .header-text {
     width: 22rem;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   header .header-text {
     width: 100%;
     background-image: url("../assets/png/image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: center;
   }
 }
 header .header-text .explore-position {
@@ -50,7 +53,7 @@ header .header-text .explore-position {
     left: 9rem;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   header .header-text .explore-position {
     left: 0;
     top: 0;
@@ -60,6 +63,11 @@ header .header-text .explore-position h1 {
   color: white;
   font-family: "Cormorant+Garamond";
   font-size: 240px;
+}
+@media only screen and (max-width: 992px) {
+  header .header-text .explore-position h1 {
+    font-size: 140px;
+  }
 }
 header .header-text .explore-position .button {
   position: relative;
@@ -83,17 +91,18 @@ header .header-image {
   background-repeat: no-repeat;
   height: 100%;
 }
-@media only screen and (max-width: 1000px) {
-  header .header-image {
-    display: none;
-  }
-}
 header .header-image .link {
   width: 68px;
   height: 68px;
 }
 header .header-image .link:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  header .header-image {
+    display: none;
+    background-image: none;
+  }
 }
 
 .modal-container {
