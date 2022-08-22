@@ -19,9 +19,16 @@
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
 
   // transform-origin: left bottom;
-  transform-origin: 50px 85%;
-  animation: createBox 0.3s ease-in;
-  // animation-fill-mode: forwards; .03
+  transform-origin: 120px 80%;
+  @include respond(laptop) {
+    transform-origin: 40px 85%;
+  }
+  @include respond(sm-laptop) {
+    transform-origin: -10px 85%;
+  }
+
+  animation: createBox .3s ease-in;
+  // animation-fill-mode: forwards; .3
 
   img {
     position: absolute;
