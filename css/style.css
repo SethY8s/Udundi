@@ -184,11 +184,6 @@ header .header-image .link:hover {
     width: 540px;
   }
 }
-@media only screen and (max-width: 992px) {
-  .modal-container {
-    padding: 2rem 3.25rem 3.25rem 3.25rem;
-  }
-}
 @media only screen and (max-width: 1550px) {
   .modal-container {
     transform-origin: 40px 85%;
@@ -202,13 +197,16 @@ header .header-image .link:hover {
 @media only screen and (max-width: 992px) {
   .modal-container {
     margin: 0;
+    padding: 2rem 3.25rem 3.25rem 3.25rem;
     transform-origin: bottom;
     z-index: 100;
   }
 }
 @media only screen and (max-width: 550px) {
   .modal-container {
-    width: 80%;
+    overflow-y: auto;
+    max-height: 600px;
+    width: 90%;
   }
 }
 .modal-container img {
