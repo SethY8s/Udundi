@@ -2,14 +2,16 @@ const explore = document.querySelector('.explore-position');
 
 const startingAnimation = document.querySelector('.starting-animation');
 
-const button = document.querySelector('.button');
+const button = document.querySelectorAll('.on-click-button');
 
 const modal = document.querySelector('.modal-container');
 
-button.addEventListener('click', function () {
-  explore.classList.add('delete-explore');
-  modal.classList.add('adding-modal');
-  startingAnimation.classList.remove('starting-animation');
+button.forEach((element) => {
+  element.addEventListener('click', function () {
+    explore.classList.add('delete-explore');
+    modal.classList.add('adding-modal');
+    startingAnimation.classList.remove('starting-animation');
+  });
 });
 
 const modalButton = document.querySelector('.modal-button');

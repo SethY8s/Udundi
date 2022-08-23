@@ -54,6 +54,9 @@ header .header-text .explore-position {
   header .header-text .explore-position {
     left: 0;
     top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 header .header-text .explore-position h1 {
@@ -74,8 +77,6 @@ header .header-text .explore-position h1 {
 header .header-text .explore-position .button {
   position: relative;
   bottom: 2.5rem;
-  display: flex;
-  align-items: center;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 992px) {
@@ -107,6 +108,16 @@ header .header-text .explore-position .button p {
   header .header-text .explore-position .button p {
     font-size: 20px;
   }
+}
+header .header-text .explore-position button {
+  position: relative;
+  top: 3rem;
+  border-radius: 15px;
+  padding: 0.45rem;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to left, #a36754, #611818);
+  border: 1px solid #979797;
 }
 header .header-text .starting-animation {
   opacity: 0;
