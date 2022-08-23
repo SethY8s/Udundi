@@ -34,23 +34,23 @@ header .header-text {
     background-repeat: no-repeat;
   }
 }
-header .header-text .explore-position {
+header .header-text .explore-container {
   position: relative;
   left: 17rem;
   top: 6rem;
 }
 @media only screen and (max-width: 1550px) {
-  header .header-text .explore-position {
+  header .header-text .explore-container {
     left: 12rem;
   }
 }
 @media only screen and (max-width: 1200px) {
-  header .header-text .explore-position {
+  header .header-text .explore-container {
     left: 9rem;
   }
 }
 @media only screen and (max-width: 992px) {
-  header .header-text .explore-position {
+  header .header-text .explore-container {
     left: 0;
     top: -55px;
     display: flex;
@@ -58,57 +58,57 @@ header .header-text .explore-position {
     align-items: center;
   }
 }
-header .header-text .explore-position h1 {
+header .header-text .explore-container h1 {
   color: white;
   font-family: "Cormorant+Garamond";
   font-size: 240px;
 }
 @media only screen and (max-width: 992px) {
-  header .header-text .explore-position h1 {
+  header .header-text .explore-container h1 {
     font-size: 150px;
   }
 }
 @media only screen and (max-width: 550px) {
-  header .header-text .explore-position h1 {
+  header .header-text .explore-container h1 {
     font-size: 80px;
   }
 }
-header .header-text .explore-position .button {
+header .header-text .explore-container .button {
   position: relative;
   bottom: 2.5rem;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 992px) {
-  header .header-text .explore-position .button {
+  header .header-text .explore-container .button {
     bottom: 1rem;
   }
 }
-header .header-text .explore-position .button:hover {
+header .header-text .explore-container .button:hover {
   cursor: pointer;
   transform: scale(1.02);
 }
-header .header-text .explore-position .button img {
+header .header-text .explore-container .button img {
   width: 43px;
   height: 43px;
 }
 @media only screen and (max-width: 992px) {
-  header .header-text .explore-position .button img {
+  header .header-text .explore-container .button img {
     width: 33px;
     height: 33px;
   }
 }
-header .header-text .explore-position .button p {
+header .header-text .explore-container .button p {
   font-size: 24px;
   color: white;
   margin-bottom: 0.2rem;
   margin-left: 1rem;
 }
 @media only screen and (max-width: 992px) {
-  header .header-text .explore-position .button p {
+  header .header-text .explore-container .button p {
     font-size: 20px;
   }
 }
-header .header-text .explore-position button {
+header .header-text .explore-container button {
   position: relative;
   top: 1rem;
   padding: 0.45rem 1rem;
@@ -118,7 +118,7 @@ header .header-text .explore-position button {
   border: 0;
 }
 @media only screen and (max-width: 550px) {
-  header .header-text .explore-position button {
+  header .header-text .explore-container button {
     font-size: 16px;
     padding: 0.33rem 0.7rem;
   }
@@ -373,6 +373,10 @@ footer {
 footer .link2 {
   height: 36px;
   width: 36px;
+}
+footer .link3 {
+  height: 39px;
+  width: 39px;
 }
 
 /*# sourceMappingURL=style.css.map */

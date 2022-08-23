@@ -5,7 +5,6 @@ header {
   .header-text {
     background-color: $themeClrPrimary;
     height: 100%;
-    // flex-shrink: 0;
     width: 30rem;
 
     @include respond(laptop) {
@@ -14,7 +13,7 @@ header {
     @include respond(sm-laptop) {
       width: 22rem;
     }
-    // was 25% in html actualy around 29%
+
     @include respond(ipad) {
       width: 100%;
       background-image: url('../assets/png/image.png');
@@ -23,7 +22,7 @@ header {
     }
 
     // explore
-    .explore-position {
+    .explore-container {
       position: relative;
       left: 17rem;
       top: 6rem;
@@ -110,7 +109,6 @@ header {
     }
   }
 
-
   .header-image {
     background-image: url('../assets/png/image.png');
     background-size: cover;
@@ -120,7 +118,7 @@ header {
     .link {
       width: 68px;
       height: 68px;
-      
+
       transition: all 0.2s ease-in-out;
 
       &:hover {
@@ -135,7 +133,6 @@ header {
     }
   }
 }
-
 
 // starting header animation
 @keyframes headerAnimation {

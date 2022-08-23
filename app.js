@@ -1,4 +1,4 @@
-const explore = document.querySelector('.explore-position');
+const explore = document.querySelector('.explore-container');
 
 const startingAnimation = document.querySelector('.starting-animation');
 
@@ -21,8 +21,7 @@ modalButton.addEventListener('click', function () {
   explore.classList.add('returning-explore');
   modal.classList.add('removing-modal');
 
-
-// used setTimeOut since deleting these classes right away doesn't allow the animations to play
+  // used setTimeOut since deleting these classes right away doesn't allow the animations to play
   setTimeout(() => {
     explore.classList.remove('removing-explore');
     modal.classList.remove('adding-modal');
