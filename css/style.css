@@ -111,13 +111,18 @@ header .header-text .explore-position .button p {
 }
 header .header-text .explore-position button {
   position: relative;
-  top: 3rem;
-  border-radius: 15px;
-  padding: 0.45rem;
+  top: 1rem;
+  padding: 0.45rem 1rem;
   font-size: 20px;
   color: white;
-  background: linear-gradient(to left, #a36754, #611818);
-  border: 1px solid #979797;
+  background-color: #611818;
+  border: 0;
+}
+@media only screen and (max-width: 550px) {
+  header .header-text .explore-position button {
+    font-size: 16px;
+    padding: 0.33rem 0.7rem;
+  }
 }
 header .header-text .starting-animation {
   opacity: 0;
@@ -361,8 +366,8 @@ footer {
   }
 }
 footer .link2 {
-  height: 48px;
-  width: 48px;
+  height: 36px;
+  width: 36px;
 }
 
 /*# sourceMappingURL=style.css.map */

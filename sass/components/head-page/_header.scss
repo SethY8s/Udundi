@@ -99,13 +99,20 @@ header {
 
       button {
         position: relative;
-        top: 3rem;
-        border-radius: 15px;
-        padding: 0.45rem;
+        top: 1rem;
+        // border-radius: 15px;
+        padding: 0.45rem 1rem;
         font-size: 20px;
         color: white;
-        background: linear-gradient(to left, #a36754, $themeClrPrimary);
-        border: 1px solid #979797;
+        // background: linear-gradient(to left, #a36754, $themeClrPrimary);
+        background-color: $themeClrPrimary;
+        border: 0;
+
+        // border: 1px solid #979797;
+        @include respond(mobile) {
+          font-size: 16px;
+          padding: .33rem .7rem;
+        }
       }
     }
 
