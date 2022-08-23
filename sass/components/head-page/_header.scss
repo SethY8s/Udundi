@@ -96,22 +96,22 @@ header {
       }
     }
 
-    .link2{
-      height: 48px;
-      width: 48px;
-      position: relative;
-      top: 170px;
+    // .link2{
+    //   height: 48px;
+    //   width: 48px;
+    //   position: relative;
+    //   top: 170px;
 
 
-      @include respond(ipad) {
-        position: relative;
-      top: 130px;
-      }
-      @include respond(mobile) {
-        position: relative;
-      top: 170px;
-      }
-    }
+    //   @include respond(ipad) {
+    //     position: relative;
+    //   top: 130px;
+    //   }
+    //   @include respond(mobile) {
+    //     position: relative;
+    //   top: 170px;
+    //   }
+    // }
 
     .starting-animation {
       opacity: 0;
