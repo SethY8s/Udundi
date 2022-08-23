@@ -24,6 +24,14 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/png/icon.png"
+    />
+
     <title>Udundi</title>
   </head>
   <body>
@@ -31,30 +39,26 @@
       <div
         class="header-text d-flex flex-column justify-content-center align-items-center align-items-lg-start"
       >
-        <!-- explore -->
+        <!-- explore text -->
         <div class="explore-position">
           <h1 class="starting-animation">Explore</h1>
           <span class="button on-click-button d-none d-lg-flex">
-            <img src="./assets/svg/Plus.svg" alt="" />
+            <img src="./assets/svg/Plus.svg" alt="Expand icon" loading="lazy" />
             <p>More Details</p></span
           >
-          <button class="on-click-button d-lg-none">More   Details</button>
+          <button class="on-click-button d-lg-none">More Details</button>
         </div>
 
-        <!-- <div class="d-flex d-lg-none">
-          <a target="_blank" href="https://www.facebook.com/udundi/"
-            ><img class="link2 me-2" src="./assets/svg/Facebook.svg" alt=""
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/udundi/?hl=en"
-            ><img class="link2 ms-2" src="./assets/svg/Instagram.svg" alt=""
-          /></a>
-        </div> -->
-
-        <!-- explore -->
+        <!-- explore text end -->
 
         <!-- modal -->
         <section class="modal-container">
-          <img class="modal-button" src="./assets/svg/Path.svg" alt="" />
+          <img
+            class="modal-button"
+            src="./assets/svg/Path.svg"
+            alt="X icon"
+            loading="lazy"
+          />
           <div class="modal-text-container">
             <h2>Explore</h2>
             <p>
@@ -75,24 +79,48 @@
         </section>
         <!-- modal -->
       </div>
+      <!-- desktop background image -->
       <div
         class="header-image w-100 d-lg-flex d-md-none flex-column justify-content-end align-items-end"
       >
         <a target="_blank" href="https://www.facebook.com/udundi/"
-          ><img class="mb-3 me-4 link" src="./assets/svg/Facebook.svg" alt=""
+          ><img
+            class="mb-3 me-4 link"
+            src="./assets/svg/Facebook.svg"
+            alt="Facebook icon"
+            loading="lazy"
         /></a>
         <a target="_blank" href="https://www.instagram.com/udundi/?hl=en"
-          ><img class="link mb-4 me-4" src="./assets/svg/Instagram.svg" alt=""
+          ><img
+            class="link mb-4 me-4"
+            src="./assets/svg/Instagram.svg"
+            alt="Instagram icon"
+            loading="lazy"
         /></a>
       </div>
-      <footer><div class="d-flex d-lg-none">
+      <!-- end of desktop background image -->
+
+      <!-- noramlly I would never put a footer tag in a header, 
+      however since this whole page is a header, I figured this would be 
+      the one time it would be a appropriate-->
+      <footer>
+        <div class="d-flex d-lg-none">
           <a target="_blank" href="https://www.facebook.com/udundi/"
-            ><img class="link2 me-2" src="./assets/svg/Facebook.svg" alt=""
+            ><img
+              class="link2 me-2"
+              src="./assets/svg/Facebook.svg"
+              alt="facebook icon"
+              loading="lazy"
           /></a>
           <a target="_blank" href="https://www.instagram.com/udundi/?hl=en"
-            ><img class="link2 ms-2" src="./assets/svg/Instagram.svg" alt=""
+            ><img
+              class="link2 ms-2"
+              src="./assets/svg/Instagram.svg"
+              alt="instagram icon"
+              loading="lazy"
           /></a>
-        </div></footer>
+        </div>
+      </footer>
     </header>
 
     <script

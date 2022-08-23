@@ -14,7 +14,6 @@ header {
 header .header-text {
   background-color: #611818;
   height: 100%;
-  flex-shrink: 0;
   width: 30rem;
 }
 @media only screen and (max-width: 1550px) {
@@ -53,7 +52,7 @@ header .header-text .explore-position {
 @media only screen and (max-width: 992px) {
   header .header-text .explore-position {
     left: 0;
-    top: -50px;
+    top: -55px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,9 +170,9 @@ header .header-image .link:hover {
   width: 572px;
   padding: 4rem;
   background-color: rgb(255, 255, 255);
-  margin-left: 10rem;
+  margin-left: 14rem;
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
-  transform-origin: 120px 80%;
+  transform-origin: 80px 80%;
   animation: createBox 0.3s ease-in;
 }
 @media only screen and (max-height: 900px) {
@@ -184,6 +183,7 @@ header .header-image .link:hover {
 }
 @media only screen and (max-width: 1550px) {
   .modal-container {
+    margin-left: 10rem;
     transform-origin: 40px 85%;
   }
 }
@@ -205,7 +205,7 @@ header .header-image .link:hover {
     overflow-y: auto;
     max-height: 600px;
     width: 90%;
-    bottom: 3rem;
+    bottom: 5rem;
   }
 }
 .modal-container img {
@@ -251,6 +251,11 @@ header .header-image .link:hover {
     font-size: 56px;
   }
 }
+@media only screen and (max-width: 550px) {
+  .modal-container .modal-text-container h2 {
+    width: fit-content;
+  }
+}
 .modal-container .modal-text-container p {
   font-size: 18px;
   padding-top: 0.6rem;
@@ -275,7 +280,7 @@ header .header-image .link:hover {
     height: 50px;
   }
 }
-.delete-explore {
+.removing-explore {
   animation: deleteText 0.3s linear;
   animation-fill-mode: forwards;
 }

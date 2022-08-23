@@ -1,14 +1,11 @@
 header {
   height: 100vh;
-  // width: 100vh;
   width: 100%;
 
   .header-text {
     background-color: $themeClrPrimary;
     height: 100%;
-    flex-shrink: 0;
-
-    // width: 24.75rem;
+    // flex-shrink: 0;
     width: 30rem;
 
     @include respond(laptop) {
@@ -23,7 +20,6 @@ header {
       background-image: url('../assets/png/image.png');
       background-size: cover;
       background-repeat: no-repeat;
-      // align-items: center;
     }
 
     // explore
@@ -31,7 +27,6 @@ header {
       position: relative;
       left: 17rem;
       top: 6rem;
-      // bottom: 500px;
 
       @include respond(laptop) {
         left: 12rem;
@@ -42,11 +37,9 @@ header {
 
       @include respond(ipad) {
         left: 0;
-        top: -50px;
-
+        top: -55px;
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
       }
 
@@ -64,8 +57,6 @@ header {
       .button {
         position: relative;
         bottom: 2.5rem;
-        // display: flex;
-        // align-items: center;
 
         @include respond(ipad) {
           bottom: 1rem;
@@ -77,7 +68,6 @@ header {
           transform: scale(1.02);
         }
 
-        // width: 100%;
         img {
           width: 43px;
           height: 43px;
@@ -100,37 +90,18 @@ header {
       button {
         position: relative;
         top: 1rem;
-        // border-radius: 15px;
         padding: 0.45rem 1rem;
         font-size: 20px;
         color: white;
-        // background: linear-gradient(to left, #a36754, $themeClrPrimary);
         background-color: $themeClrPrimary;
         border: 0;
 
-        // border: 1px solid #979797;
         @include respond(mobile) {
           font-size: 16px;
-          padding: .33rem .7rem;
+          padding: 0.33rem 0.7rem;
         }
       }
     }
-
-    // .link2{
-    //   height: 48px;
-    //   width: 48px;
-    //   position: relative;
-    //   top: 170px;
-
-    //   @include respond(ipad) {
-    //     position: relative;
-    //   top: 130px;
-    //   }
-    //   @include respond(mobile) {
-    //     position: relative;
-    //   top: 170px;
-    //   }
-    // }
 
     .starting-animation {
       opacity: 0;
@@ -138,6 +109,7 @@ header {
       animation-fill-mode: forwards;
     }
   }
+
 
   .header-image {
     background-image: url('../assets/png/image.png');
@@ -148,13 +120,9 @@ header {
     .link {
       width: 68px;
       height: 68px;
-
-      // @include respond(ipad) {
-      //   width: 10px;
-      //   height: 10px;
-      // }
-
+      
       transition: all 0.2s ease-in-out;
+
       &:hover {
         cursor: pointer;
         transform: scale(1.05);
@@ -168,6 +136,8 @@ header {
   }
 }
 
+
+// starting header animation
 @keyframes headerAnimation {
   0% {
     opacity: 0;
@@ -181,3 +151,4 @@ header {
     transform: (0, 0);
   }
 }
+// end of starting header animation

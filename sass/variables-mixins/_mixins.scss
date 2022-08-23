@@ -1,3 +1,6 @@
+// idealy I would start with a mobile design first and then move to desktop
+// this is why the media queries are kinda random and I have so many
+
 @mixin respond($breakpoint) {
   @if $breakpoint == mobile {
     @media only screen and (max-width: 550px) {

@@ -2,33 +2,33 @@
   display: none;
 
   opacity: 0;
-  // position: relative;
   position: absolute;
-
   width: 572px;
-
   padding: 4rem;
 
+  // checks screen height since original design was a very large modal
   @include respond(smaller-height) {
     padding: 3.25rem;
     width: 540px;
   }
 
   background-color: rgb(255, 255, 255, 1);
-  margin-left: 10rem;
+  margin-left: 14rem;
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.296766);
 
-  // transform-origin: left bottom;
-  transform-origin: 120px 80%;
+  // adjusting where animation starts on desktop
+  transform-origin: 80px 80%;
+
   @include respond(laptop) {
+    margin-left: 10rem;
     transform-origin: 40px 85%;
   }
   @include respond(sm-laptop) {
     transform-origin: -10px 85%;
   }
+  // end of adjustment
 
   @include respond(ipad) {
-    // position: relative;
     margin: 0;
     padding: 2rem 3.25rem 3.25rem 3.25rem;
     transform-origin: bottom;
@@ -38,11 +38,10 @@
     overflow-y: auto;
     max-height: 600px;
     width: 90%;
-    bottom: 3rem;
+    bottom: 5rem;
   }
 
   animation: createBox 0.3s ease-in;
-  // animation-fill-mode: forwards; .3
 
   img {
     position: absolute;
@@ -85,6 +84,9 @@
       @include respond(smaller-height) {
         font-size: 56px;
       }
+      @include respond(mobile) {
+        width: fit-content;
+      }
     }
     p {
       font-size: 18px;
@@ -112,9 +114,9 @@
   }
 }
 
-// js classes
+// js classes that add/delete elements
 
-.delete-explore {
+.removing-explore {
   animation: deleteText 0.3s linear;
   animation-fill-mode: forwards;
 }
