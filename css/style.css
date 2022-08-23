@@ -78,6 +78,11 @@ header .header-text .explore-position .button {
   align-items: center;
   transition: all 0.2s ease-in-out;
 }
+@media only screen and (max-width: 992px) {
+  header .header-text .explore-position .button {
+    bottom: 1rem;
+  }
+}
 header .header-text .explore-position .button:hover {
   cursor: pointer;
   transform: scale(1.02);
@@ -86,11 +91,22 @@ header .header-text .explore-position .button img {
   width: 43px;
   height: 43px;
 }
+@media only screen and (max-width: 992px) {
+  header .header-text .explore-position .button img {
+    width: 33px;
+    height: 33px;
+  }
+}
 header .header-text .explore-position .button p {
   font-size: 24px;
   color: white;
   margin-bottom: 0.2rem;
   margin-left: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  header .header-text .explore-position .button p {
+    font-size: 20px;
+  }
 }
 header .header-text .link2 {
   height: 48px;
@@ -176,6 +192,11 @@ header .header-image .link:hover {
 @media only screen and (max-width: 1200px) {
   .modal-container {
     transform-origin: -10px 85%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .modal-container {
+    transform-origin: bottom;
   }
 }
 .modal-container img {

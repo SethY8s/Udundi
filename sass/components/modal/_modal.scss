@@ -27,6 +27,12 @@
     transform-origin: -10px 85%;
   }
 
+  @include respond(ipad) {
+    // position: relative;
+    transform-origin: bottom;
+    
+  }
+
   animation: createBox .3s ease-in;
   // animation-fill-mode: forwards; .3
 
