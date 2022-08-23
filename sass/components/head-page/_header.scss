@@ -65,7 +65,7 @@ header {
         display: flex;
         align-items: center;
 
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
         &:hover {
           cursor: pointer;
           transform: scale(1.02);
@@ -85,9 +85,26 @@ header {
       }
     }
 
+    .link2{
+      height: 48px;
+      width: 48px;
+      position: relative;
+      top: 170px;
+
+
+      @include respond(ipad) {
+        position: relative;
+      top: 130px;
+      }
+      @include respond(mobile) {
+        position: relative;
+      top: 170px;
+      }
+    }
+
     .starting-animation {
       opacity: 0;
-      animation: 1.6s headerAnimation .5s ease-out;
+      animation: 1.6s headerAnimation 0.5s ease-out;
       animation-fill-mode: forwards;
     }
   }
@@ -101,6 +118,12 @@ header {
     .link {
       width: 68px;
       height: 68px;
+
+      // @include respond(ipad) {
+      //   width: 10px;
+      //   height: 10px;
+      // }
+
       transition: all 0.2s ease-in-out;
       &:hover {
         cursor: pointer;

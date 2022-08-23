@@ -76,7 +76,7 @@ header .header-text .explore-position .button {
   bottom: 2.5rem;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 header .header-text .explore-position .button:hover {
   cursor: pointer;
@@ -91,6 +91,24 @@ header .header-text .explore-position .button p {
   color: white;
   margin-bottom: 0.2rem;
   margin-left: 1rem;
+}
+header .header-text .link2 {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  top: 170px;
+}
+@media only screen and (max-width: 992px) {
+  header .header-text .link2 {
+    position: relative;
+    top: 130px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header .header-text .link2 {
+    position: relative;
+    top: 170px;
+  }
 }
 header .header-text .starting-animation {
   opacity: 0;
