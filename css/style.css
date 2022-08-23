@@ -184,6 +184,11 @@ header .header-image .link:hover {
     width: 540px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .modal-container {
+    padding: 2rem 3.25rem 3.25rem 3.25rem;
+  }
+}
 @media only screen and (max-width: 1550px) {
   .modal-container {
     transform-origin: 40px 85%;
@@ -196,7 +201,14 @@ header .header-image .link:hover {
 }
 @media only screen and (max-width: 992px) {
   .modal-container {
+    margin: 0;
     transform-origin: bottom;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .modal-container {
+    width: 80%;
   }
 }
 .modal-container img {
@@ -211,6 +223,16 @@ header .header-image .link:hover {
     width: 20px;
     height: 20px;
     left: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .modal-container img {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 0;
+    left: 1rem;
+    align-self: flex-end;
   }
 }
 .modal-container .modal-text-container {
@@ -256,7 +278,6 @@ header .header-image .link:hover {
     height: 50px;
   }
 }
-
 .delete-explore {
   animation: deleteText 0.3s linear;
   animation-fill-mode: forwards;
@@ -265,6 +286,12 @@ header .header-image .link:hover {
 .adding-modal {
   display: block;
   animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 550px) {
+  .adding-modal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .returning-explore {
